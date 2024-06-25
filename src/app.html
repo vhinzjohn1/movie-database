@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    %sveltekit.head%
+    <title>Movie DB</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Catamaran:400,800");
+
+      * {
+        font-family: "Catamaran", sans-serif;
+      }
+      .nav-bar {
+        display: flex;
+        justify-content: center;
+      }
+      .navbar-container {
+        color: black;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <a href="/" class="navbar-container">
+      <h2 class="nav-bar">Movie Database</h2>
+    </a>
+    <div style="display: contents">%sveltekit.body%</div>
+  </body>
+</html>
